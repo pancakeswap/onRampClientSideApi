@@ -1,9 +1,11 @@
 import express, { Router } from "express";
 // import app from "@app";
-import { fetchBscAvailability, fetchBscQuote, generateBinanceConnectSig, generateMercuryoSig, generateMoonPaySig } from './handlers/signatureHandlers';
-import { fetchBinanceConnectIpAvailability, fetchMercuryoIpAvailability, fetchMoonPayIpAvailability, fetchProviderQuotes } from "./handlers/proxyHandlers";
-import { fetchBinanceConnectQuote } from "./quoterFetchers";
-import { fetchIpDetails, fetchMercuryoAvailability } from "./ipFetchers";
+import { fetchBscAvailability, fetchBscQuote, generateBinanceConnectSig, generateMercuryoSig, generateMoonPaySig } from './verification/signatureHandlers';
+import { fetchBinanceConnectIpAvailability, fetchMercuryoIpAvailability, fetchMoonPayIpAvailability, fetchProviderQuotes } from "./proxy/proxyHandlers";
+import { fetchBinanceConnectQuote } from "./proxy/fetchers/ProviderQuoteFetchers";
+import { fetchIpDetails, fetchMercuryoAvailability } from "./proxy/fetchers/ipAvailabilityFetchers";
+import { createUser } from "./user/createUserHandler";
+import { getUserTransactions } from "./user/getTransactions";
 
 
 const router: Router = express.Router()
@@ -20,5 +22,10 @@ router.route("/fetch-bsc-availability").post(fetchBinanceConnectIpAvailability)
 router.route("/fetch-moonpay-availability").get(fetchMoonPayIpAvailability)
 router.route("/fetch-mercuryo-availability").get(fetchMercuryoIpAvailability)
 router.route('/user-ip').get(fetchIpDetails)
+
+//user routes
+router.route("/create-user").post(createUser)
+router.route("/get-user-transactions").get(getUserTransactions)
+
 
 export default router
