@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
-import { fetchMercuryoQuote } from '../quoterFetchers';
+import { fetchMercuryoQuote } from './fetchers/ProviderQuoteFetchers';
 import { APIError } from '../../utils/APIError';
 import { providerQuotesSchema } from '../../typeValidation/validation';
-import { fetchBinanceConnectAvailability, fetchMercuryoAvailability, fetchMoonpayAvailability } from '../ipFetchers';
+import { fetchBinanceConnectAvailability, fetchMercuryoAvailability, fetchMoonpayAvailability } from './fetchers/ipAvailabilityFetchers';
 
 // to-do
 export const fetchProviderQuotes = async (req: Request, res: Response, next: NextFunction) => {

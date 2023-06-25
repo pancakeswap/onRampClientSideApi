@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { post } from '../services/axios';
-import { sign } from '../utils/rsa_sig';
-import config from '../config/config';
+import { post } from '../../../services/axios';
+import { sign } from '../../../utils/rsa_sig';
+import config from '../../../config/config';
 
 const MOONPAY_EBDPOINT = `https://api.moonpay.com/v3/currencies/`;
 const MERCURYO_ENDPOINT = `https://api.mercuryo.io/v1.6/widget/buy/rate`;

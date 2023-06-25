@@ -1,6 +1,7 @@
 {
   "name": "onramp-api",
   "version": "1.0.0",
+  "main": "server.ts",
   "description": "",
   "scripts": {
     "build": "tsc",
@@ -43,11 +44,17 @@
     "dotenv": "^16.0.2",
     "express": "^5.0.0-alpha.8",
     "express-http-context": "^1.2.4",
+    "faker": "^6.6.6",
     "geoip-lite": "^1.4.7",
+    "http": "^0.0.1-security",
+    "pg": "^8.11.0",
     "qs": "^6.11.2",
+    "reflect-metadata": "^0.1.13",
     "runtime-node-refresh": "^1.0.7",
+    "socket.io": "^4.7.0",
     "ts-jest": "^29.1.0",
     "ts-node": "^10.4.0",
+    "typeorm": "^0.3.17",
     "typescript": "^4.5.4",
     "winston": "^3.9.0",
     "zod": "^3.21.4"

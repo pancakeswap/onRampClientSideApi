@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { post } from '../services/axios';
-import { sign } from '../utils/rsa_sig';
-import { checkIpPayloadSchema } from '../typeValidation/validation';
-import config from '../config/config';
+import { post } from '../../../services/axios';
+import { sign } from '../../../utils/rsa_sig';
+import { checkIpPayloadSchema } from '../../../typeValidation/validation';
+import config from '../../../config/config';
 const geoip = require('geoip-lite');
 
 export async function fetchMoonpayAvailability(userIp: string) {

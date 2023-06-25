@@ -2,6 +2,72 @@ const axios = require('axios');
 
 const MOONPAY_EBDPOINT = `https://api.moonpay.com/v3/currencies/`;
 const MERCURYO_ENDPOINT = `https://api.mercuryo.io/v1.6/widget/buy/rate`;
+import { Connection, Repository } from 'typeorm';
+import {
+  UserEntity,
+  MoonpayTxEntity,
+  MercuryoTxEntity,
+} from '../database/entities';
+import { TX_STATUS } from '../database/entities/moonpayTxEntity';
+
+const createUsers = async (con: Connection) => {
+  const users: Array<UserEntity> = [];
+  for (const _ of Array.from({ length: 1 })) {
+    const walletAddress = '0x13E7f71a3E8847399547CE127B8dE420B282E4E4';
+    const moonpayTransactions = [];
+    const mercuryoTransactions = [];
+    
+    const user: Partial<UserEntity> = new UserEntity(
+      walletAddress,
+      moonpayTransactions,
+      mercuryoTransactions,
+    );
+    users.push((await con.manager.save(user)) as UserEntity);
+  }
+  await createTransactions(con, users);
+  // await readUsers(con);
+
+};
+
+const createTransactions = async (con: Connection, users: Array<UserEntity>) => {
+  const posts: Array<MoonpayTxEntity> = [];
+  for (const user of users) {
+    const txProps: Partial<MoonpayTxEntity> = {
+      transactionId: '123499999999999999999',
+      status: TX_STATUS.PENDING,
+      amount: 100,
+      fiatCurrency: 'USD',
+      cryptoCurrency: 'USDT',
+    }
+    const txProps2: Partial<any> = {
+      transactionId: '24567777777777777777',
+      status: TX_STATUS.COMPLETED,
+      amount: 200,
+      fiatCurrency: 'EUR',
+      cryptoCurrency: 'BNB',
+    }
+    const tx1: Partial<MoonpayTxEntity> = new MoonpayTxEntity(txProps.transactionId, txProps.status, txProps.amount, txProps.cryptoCurrency, txProps.fiatCurrency);
+    // const tx2: Partial<MercuryoTxEntity> = new MercuryoTxEntity(txProps2.transactionId, txProps2.status, txProps2.amount, txProps2.cryptoCurrency, txProps2.fiatCurrency);
+    tx1.user = user;
+    // tx2.user = user;
+    posts.push((await con.manager.save(tx1)) as MoonpayTxEntity);
+    // posts.push((await con.manager.save(tx2)) as MercuryoTxEntity);
+  }
+  // await readUsers(con);
+};
+
+const readUsers = async (con: Connection) => {
+  const moonpayTransaction: Repository<MoonpayTxEntity> = con.getRepository(MoonpayTxEntity);
+  const allUsers = await moonpayTransaction
+      .createQueryBuilder('moonpayTransaction')
+      .innerJoinAndSelect('moonpayTransaction.user', 'user')
+      .where('user.walletAddress = :walletAddress', { walletAddress: '0x13E7f71a3E8847399547CE127B8dE420B282E4E4' })
+      .getMany();
+
+    console.log(allUsers);
+};
+
+export { createUsers };
 
 async function fetchMercuryoQuote(fiatCurrency, cryptoCurrency, amount) {
   // Fetch data from endpoint 2
@@ -103,12 +169,12 @@ const getMoonPaySig = async () => {
     ),
   }
   try {
-    const res = await axios.post('http://localhost:8081/generate-moonpay-sig', p
+    const res = await axios.post('http://localhost:8002/create-user', { walletAddress: "0x13E7f71a3E8847399547CE127B8dE420B282E4E4" }
      );
     const result = res.data;
     console.log(result);
   } catch (error) {
-    console.error('Error fetching data:', error.data);
+    console.error('Error fetching data:', error);
   }
 };
 
@@ -122,7 +188,7 @@ const generateBscSig = async () => {
           paymentMethod: 'CARD',
   }
   try {
-    const res = await axios.get('https://pcs-onramp-api.com/user-ip');
+    const res = await axios.get('http://localhost:8000/user-ip');
     const result = res;
     console.log(result);
   } catch (error) {
@@ -139,10 +205,17 @@ const fetchBSCQuote = async () => {
          
   }
   try {
-    const res = await axios.get('https://pcs-onramp-api.com/fetch-mercuryo-availability?userIp=156.146.51.134');
+    const res = await axios.get('https://api.mercuryo.io/v1.6/sdk-partner/transactions?widget_id=a9f3d282-db2d-4364-ae62-602c5000f003&date_start=2020-12-11&date_end=2023-12-11',
+    {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        // 'Authorization': `Api-Key sk_test_7zfPNfcZdStyiktn3lOJxOltGttayhC`,
+      },
+    });
     // console.log(res)
     const result = res;
-    console.log(result.data.result.result);
+    console.log(result.data.length);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
@@ -150,3 +223,4 @@ const fetchBSCQuote = async () => {
 
 
 getMoonPaySig()
+
