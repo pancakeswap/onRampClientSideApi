@@ -5,7 +5,7 @@ import { fetchBinanceConnectIpAvailability, fetchMercuryoIpAvailability, fetchMo
 import { fetchBinanceConnectQuote } from "./proxy/fetchers/ProviderQuoteFetchers";
 import { fetchIpDetails, fetchMercuryoAvailability } from "./proxy/fetchers/ipAvailabilityFetchers";
 import { createUser } from "./user/createUserHandler";
-import { getUserTransactions } from "./user/getTransactions";
+import { getUserTransactions, getUserTransactionss } from "./user/getTransactions";
 
 
 const router: Router = express.Router()
@@ -25,7 +25,7 @@ router.route('/user-ip').get(fetchIpDetails)
 
 //user routes
 router.route("/create-user").post(createUser)
-router.route("/get-user-transactions").get(getUserTransactions)
+router.route("/get-user-transactions").get(getUserTransactionss)
 
 
 export default router

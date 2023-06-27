@@ -4,6 +4,7 @@ import {
   Column,
   ManyToOne,
   JoinColumn,
+  BeforeUpdate,
 } from 'typeorm';
 import { UserEntity } from './users.entity';
 
@@ -21,12 +22,14 @@ export class MoonpayTxEntity  {
     amount,
     fiatCurrency,
     cryptoCurrency,
+    user
 ) {
     this.transactionId = transactionId || ''
     this.status = status,
     this.amount = amount || 0,
     this.fiatCurrency = fiatCurrency ?? '',
     this.cryptoCurrency = cryptoCurrency ?? '',
+    this.user = user,
     this.date = new Date()
   }
   @PrimaryGeneratedColumn()
@@ -53,5 +56,13 @@ export class MoonpayTxEntity  {
   @ManyToOne(() => UserEntity, (user: UserEntity) => user.moonpayTransactions)
   @JoinColumn({ name: 'tx_id' })
   user: UserEntity;
+
+  @BeforeUpdate()
+  checkProperties() {
+    if (!this.user) {
+      throw new Error("user is required");
+    }
+  }
+
 
 }

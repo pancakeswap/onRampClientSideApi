@@ -4,6 +4,7 @@ import {
   Column,
   ManyToOne,
   JoinColumn,
+  BeforeUpdate,
 } from 'typeorm';
 import { UserEntity } from './users.entity';
 
@@ -21,19 +22,21 @@ export class MercuryoTxEntity  {
     amount,
     fiatCurrency,
     cryptoCurrency,
+    user
   ) {
     this.transactionId = transactionId,
     this.status = status,
     this.amount = amount,
     this.fiatCurrency = fiatCurrency,
     this.cryptoCurrency = cryptoCurrency,
-    this.date = new Date()
+    this.date = new Date(),
+    this.user = user
   }
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column({ type: 'text' })
-  transactionId: string;
+  transactionId: number;
 
   @Column({ type: 'text' })
   status: keyof typeof TX_STATUS;
@@ -53,5 +56,12 @@ export class MercuryoTxEntity  {
   @ManyToOne(() => UserEntity, (user: UserEntity) => user.mercuryoTransactions)
   @JoinColumn({ name: 'tx_id' })
   user: UserEntity;
+
+  @BeforeUpdate()
+  checkProperties() {
+    if (!this.user) {
+      throw new Error("user is required");
+    }
+  }
 
 }

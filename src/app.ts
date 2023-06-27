@@ -3,10 +3,9 @@ import cors from 'cors';
 import { config as _c } from 'dotenv';
 import errorHandler from './middleware/errorHandlingMiddleware';
 import router from './api/router';
-import { getMessages, createMessage } from './database/queries';
+import { getMessages, createMessage,  } from './database/queries';
 import bodyParser from 'body-parser';
 import { getAllUserTransactions } from './api/user/getTransactions';
-
 const app = express();
 
 app.use(express.json());
@@ -34,8 +33,10 @@ app.get('/ip', (req, res) => {
   res.send(ip)
 })
 
-app.get("/messages", getAllUserTransactions);
+app.get("/messages", getMessages);
 app.post("/createmessages", createMessage);
+// app.post('/ctx', createMsg)
+// app.post('/add-tx', )
 
 
 export default app

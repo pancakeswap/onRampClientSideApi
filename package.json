@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/server.ts",
+    "start:gateway": "node dist/gateway/start.js",
     "server": "nodemon src/server.ts",
     "test": "jest -c jest.config.js --env=node",
     "test:cov": "jest -c jest.config.js --coverage --env=node",

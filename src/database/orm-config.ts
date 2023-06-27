@@ -7,6 +7,7 @@ export const typeOrmConfig: PostgresConnectionOptions = {
   host: "localhost",
   port: 5432,
   username: "pcs",
+  name: 'text',
   password: "Emcg45245!",
   database: "api",
   synchronize: true,

@@ -1,12 +1,14 @@
-import { Connection, createConnection, getConnectionManager } from "typeorm";
+import { Connection, DataSource, createConnection, getConnectionManager } from "typeorm";
 import { typeOrmConfig } from "./orm-config";
+
+let connection: DataSource | undefined;
 
 export const connectDatabase = async (
     resetDB: boolean
 ): Promise<Connection> => {
-    let connection: Connection;
-
     try {
+        const pre = getDatabase()
+        if (pre) return pre
         connection = await createConnection(typeOrmConfig);
         console.log('Database Connected')
 
@@ -49,3 +51,11 @@ export const resetDatabase = async (connection?: Connection) => {
     }
     await connection.dropDatabase();
 };
+
+
+// Gets the existing database connection
+export function getDatabase(): DataSource | null {
+	// if (!dbConnection) throw new Error("Tried to get database before it was initialised");
+	if (!connection) return null;
+	return connection;
+}

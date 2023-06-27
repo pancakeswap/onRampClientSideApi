@@ -23,11 +23,7 @@ const transactionSchema = z.object({
 
 const createTransaction = async (transactionData: any, user: UserEntity) => {
   const { id, transactionId, status, amount, fiatCurrency, cryptoCurrency } = transactionData;
-
-  const transaction = new MoonpayTxEntity(transactionId, status, amount, fiatCurrency, cryptoCurrency);
-  transaction.id = id;
-  transaction.user = user;
-
+  const transaction = new MoonpayTxEntity(transactionId, status, amount, fiatCurrency, cryptoCurrency, user);
   return transaction;
 };
 
@@ -61,13 +57,14 @@ export const mercuryoTransactionHandler = async (req: Request, res: Response, ne
       res.status(201).json({ message: 'Transaction created successfully' });
     } else if (status === TransactionStatus.Complete || status === TransactionStatus.Failed) {
       const { transactionId } = transactionData;
+      //@ts-ignore
       const transaction = await transactionRepository.findOne({ transactionId });
 
       if (!transaction) {
         return res.status(404).json({ message: 'Transaction not found' });
       }
 
-      transaction.status = status;
+      transaction.status = status as any
       await transactionRepository.save(transaction);
 
       res.status(200).json({ message: 'Transaction updated successfully' });
