@@ -4,7 +4,7 @@
   "main": "server.ts",
   "description": "",
   "scripts": {
-    "build": "tsc",1
+    "build": "tsc",
     "start": "ts-node src/server.ts",
     "server1": "nodemon src/server1.ts",
     "start:gateway": "node dist/gateway/start.js",
@@ -46,9 +46,12 @@
     "dotenv": "^16.0.2",
     "express": "^5.0.0-alpha.8",
     "express-http-context": "^1.2.4",
+    "express-status-monitor": "^1.3.4",
+    "express-validator": "^7.0.1",
     "faker": "^6.6.6",
     "geoip-lite": "^1.4.7",
     "http": "^0.0.1-security",
+    "node-cache": "^5.1.2",
     "pg": "^8.11.0",
     "qs": "^6.11.2",
     "reflect-metadata": "^0.1.13",

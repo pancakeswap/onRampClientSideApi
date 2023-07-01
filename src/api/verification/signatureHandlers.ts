@@ -12,21 +12,27 @@ import {
 	checkIpPayloadSchema,
 	validateBinanceConnectSchema,
 	validateMercuryoSchema,
-	zQueryMoonPay,
 } from "../../typeValidation/validation";
-import { chars } from "../../typeValidation/types";
-import { populatBuildTradeParams, populateMoonPayUrl, populate_GET_RequestSigContent, sign } from "../../utils/rsa_sig";
+import { populatBuildTradeParams, populate_GET_RequestSigContent, sign } from "../../utils/rsa_sig";
 import { BINANCE_CONNECT_URL, MOONPAY_URL } from "../../config/constants";
-import ErrorResponse from "../../utils/errorResponse";
 import { APIError } from "../../utils/APIError";
 import config from "../../config/config";
 
 export const generateMercuryoSig = async (req: Request, res: Response, next: NextFunction) => {
-	const queryString = req.method === "GET" ? qs.stringify({ walletAddress: req.query.walletAddress }) : qs.stringify({ message: req.body.message });
+	const queryString =
+		req.method === "GET"
+			? qs.stringify({ walletAddress: req.query.walletAddress })
+			: qs.stringify({ message: req.body.message });
 
 	const queryParsed = qs.parse(queryString);
 
-	const secret = await crypto.webcrypto.subtle.importKey("raw", new TextEncoder().encode(config.mercuryoSecretKey), { name: "HMAC", hash: "SHA-512" }, false, ["sign", "verify"]);
+	const secret = await crypto.webcrypto.subtle.importKey(
+		"raw",
+		new TextEncoder().encode(config.mercuryoSecretKey),
+		{ name: "HMAC", hash: "SHA-512" },
+		false,
+		["sign", "verify"],
+	);
 
 	if (req.method === "GET") {
 		const parsed = validateMercuryoSchema("mercuryoGET", queryParsed, res) as ParsedMercuryGet;
@@ -39,7 +45,9 @@ export const generateMercuryoSig = async (req: Request, res: Response, next: Nex
 		const { message } = parsed.data;
 		const signature = req.headers["x-api-signature"] as string | undefined;
 		if (!signature) {
-			return res.status(400).json({ success: false, reason: "the signature need to be included in the headers as x-api-signature" });
+			return res
+				.status(400)
+				.json({ success: false, reason: "the signature need to be included in the headers as x-api-signature" });
 		}
 		const sigBuf = Uint8Array.from(atob(signature), (c) => c.charCodeAt(0));
 		const isVerified = await crypto.webcrypto.subtle.verify("HMAC", secret, sigBuf, new TextEncoder().encode(message));
@@ -52,23 +60,14 @@ export const generateMercuryoSig = async (req: Request, res: Response, next: Nex
 
 export const generateMoonPaySig = async (req: Request, res: Response, next: NextFunction) => {
 	try {
-		const queryString = qs.stringify(req.body);
-		const queryParsed = qs.parse(queryString);
-		const parsed = zQueryMoonPay.safeParse(queryParsed);
+		const moonPayParams = { ...req.body };
+		const supportedTokens = moonPayParams.showOnlyCurrencies;
+		const encodedCurrencyList = encodeURIComponent(supportedTokens);
 
-		const { showCurrencies } = req.body;
-		console.log(showCurrencies);
-		if (parsed.success === false) {
-			console.log("failing");
-			return next(new ErrorResponse("invalid qequest body", 0));
-		}
-		const { walletAddresses } = parsed.data;
-		const encodedWalletAddresses = walletAddresses.replace(/[{:},"]/g, (m: string) => chars[m]);
-
-		const moonPayTradeUrl = populateMoonPayUrl({ ...parsed.data, encodedWalletAddresses });
+		const moonPayTradeUrl = `&theme=${moonPayParams.theme}&colorCode=%2382DBE3&defaultCurrencyCode=${moonPayParams.defaultCurrencyCode}&baseCurrencyCode=${moonPayParams.baseCurrencyCode}&baseCurrencyAmount=${moonPayParams.baseCurrencyAmount}&walletAddress=${moonPayParams.walletAddress}&showOnlyCurrencies=${encodedCurrencyList}`;
 		const originalUrl = `${MOONPAY_URL}${moonPayTradeUrl}`;
 
-		const signature = crypto.createHmac("sha256", config.moonpaySecretKey).update(new URL(originalUrl).search).digest("base64");
+		const signature = crypto.createHmac("sha256",'sk_test_7zfPNfcZdStyiktn3lOJxOltGttayhC').update(new URL(originalUrl).search).digest("base64");
 
 		const returnData = `${originalUrl}&signature=${encodeURIComponent(signature)}`;
 
@@ -86,14 +85,19 @@ export const generateBinanceConnectSig = async (req: Request, res: Response, nex
 	if (req.method === "GET") {
 		// to do
 		const parsed = validateBinanceConnectSchema("BinanceConnectGET", queryParsed, res) as ParsedBinanceConnectGet;
-		const privateKey = await crypto.webcrypto.subtle.importKey("raw", new TextEncoder().encode(config.privateKey), { name: "HMAC", hash: "SHA-256" }, false, [
-			"sign",
-			"verify",
-		]);
+		const privateKey = await crypto.webcrypto.subtle.importKey(
+			"raw",
+			new TextEncoder().encode(config.privateKey),
+			{ name: "HMAC", hash: "SHA-256" },
+			false,
+			["sign", "verify"],
+		);
 		const { message } = parsed.data;
 		const signature = req.headers["x-api-signature"] as string | undefined;
 		if (!signature) {
-			return res.status(400).json({ success: false, reason: "the signature need to be included in the headers as x-api-signature" });
+			return res
+				.status(400)
+				.json({ success: false, reason: "the signature need to be included in the headers as x-api-signature" });
 		}
 		const sigBuf = Uint8Array.from(atob(signature), (c) => c.charCodeAt(0));
 		const isVerified = await crypto.webcrypto.subtle.verify("HMAC", privateKey, sigBuf, new TextEncoder().encode(message));

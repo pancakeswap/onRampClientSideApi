@@ -8,6 +8,10 @@ export function sign(srcData: string, privateKey: string): string {
     return signature.toString("base64");
 }
 
+export const generateHMAC = (secretKey: string, message: string) => {
+		return crypto.createHmac("sha256", secretKey).update(message).digest("hex");
+}
+
 export const populate_GET_RequestSigContent = (walletAddress: string, merchantCode: string, timestamp: string) => {
   return `cryptoAddress=${walletAddress}&cryptoNetwork=ERC20&merchantCode=${merchantCode}&timestamp=${timestamp}`
 }
