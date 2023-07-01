@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { pendingTransactionHandler } from ".";
+import { createTransactionHandler, updateTransactionHandler } from ".";
 
 interface ApiResponse {
 	context: {
@@ -136,13 +136,17 @@ type Assets = {
 };
 
 // Extract the TransactionData object from ApiResponse
-type ExtractTransactionData<T> = (T extends ApiResponse ? T["event"]["body"]["data"] : never )
+type ExtractTransactionData<T> = T extends ApiResponse ? T["event"]["body"]["data"] : never;
 
 // Extract the desired properties from TransactionData
-type ExtractedTransactionData = Pick<ExtractTransactionData<ApiResponse>, "id" | "walletAddress" | "status" | "updatedAt" | "baseCurrencyAmount" | "quoteCurrencyAmount">
+type ExtractedTransactionData = Pick<
+	ExtractTransactionData<ApiResponse>,
+	"id" | "walletAddress" | "status" | "updatedAt" | "baseCurrencyAmount" | "quoteCurrencyAmount"
+>;
 
+type WorkableTxdata = ExtractedTransactionData & Assets;
 // Usage example
-const transactionData: ExtractedTransactionData & Assets = {
+const transactionData: WorkableTxdata = {
 	id: "123",
 	walletAddress: "0xABC",
 	status: "completed",
@@ -153,18 +157,15 @@ const transactionData: ExtractedTransactionData & Assets = {
 	quoteCurrencyAmount: 0.1,
 };
 
+export const TransactionUpdaterWebHook = async (req: Request, res: Response): Promise<void> => {
+	const transactionData = req.body;
 
-// export const TransactionUpdaterWebHook = async(req: Request, res: Response): Promise<void> => {
-// 	const apiResponse: ApiResponse = req.body;
-//     apiResponse.
-//     const transactionData: ExtractedTransactionData = apiResponse.event.body.data;
+	if (transactionData.status === "PENDING") {
+		const returnedData = await createTransactionHandler(transactionData);
+		res.status(200).json({ data: returnedData });
 
-//     if (transactionData.status === 'PENDING'){
-//         //check if account exists if not create it
-//         //create new transaction with pending status
-//         //after db has been updated send message to websocket
-//         await pendingTransactionHandler(transactionData)
-//     }
-
-
-// }
+	} else if (["COMPLETED", "FAILED"].includes(transactionData.status)) {
+		const returnedData = await updateTransactionHandler(transactionData);
+		res.status(200).json({ data: returnedData });
+	}
+};

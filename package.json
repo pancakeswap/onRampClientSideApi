@@ -4,8 +4,9 @@
   "main": "server.ts",
   "description": "",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc",1
     "start": "ts-node src/server.ts",
+    "server1": "nodemon src/server1.ts",
     "start:gateway": "node dist/gateway/start.js",
     "server": "nodemon src/server.ts",
     "test": "jest -c jest.config.js --env=node",

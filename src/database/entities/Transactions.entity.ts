@@ -14,29 +14,34 @@ export enum TX_STATUS {
   FAILED='FAILED'
 }
 
-@Entity({ name: 'moonpayTransaction' })
+@Entity({ name: 'transaction' })
 export class MoonpayTxEntity  {
   constructor(
-    transactionId,
-    status,
-    amount,
-    fiatCurrency,
-    cryptoCurrency,
-    user
+    transactionId: string,
+    type: string,
+    status: keyof typeof TX_STATUS,
+    amount: number,
+    fiatCurrency: string,
+    cryptoCurrency: string,
+    user: UserEntity
 ) {
-    this.transactionId = transactionId || ''
+    this.transactionId = transactionId,
+    this.type = type,
     this.status = status,
-    this.amount = amount || 0,
-    this.fiatCurrency = fiatCurrency ?? '',
-    this.cryptoCurrency = cryptoCurrency ?? '',
+    this.amount = amount,
+    this.fiatCurrency = fiatCurrency,
+    this.cryptoCurrency = cryptoCurrency,
     this.user = user,
     this.date = new Date()
   }
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ type: 'text' })
+  @Column({ type: 'text', unique: true })
   transactionId: string;
+
+  @Column({ type: 'text' })
+  type: string;
 
   @Column({ type: 'text' })
   status: keyof typeof TX_STATUS;
@@ -53,16 +58,7 @@ export class MoonpayTxEntity  {
   @Column({ type: 'text' })
   date: Date;
 
-  @ManyToOne(() => UserEntity, (user: UserEntity) => user.moonpayTransactions)
+  @ManyToOne(() => UserEntity, (user: UserEntity) => user.transactions)
   @JoinColumn({ name: 'tx_id' })
   user: UserEntity;
-
-  @BeforeUpdate()
-  checkProperties() {
-    if (!this.user) {
-      throw new Error("user is required");
-    }
-  }
-
-
 }

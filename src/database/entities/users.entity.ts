@@ -1,34 +1,26 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm'
-import { MoonpayTxEntity } from './moonpayTxEntity'
-import { MercuryoTxEntity } from './mercuryoTxEntity'
+import { MoonpayTxEntity } from './Transactions.entity'
 
 @Entity({ name: 'users' })
 export class UserEntity  {
   constructor(
     walletAddress: string,
-    moonpayTransactions: Array<MoonpayTxEntity>,
-    mercuryoTransactions: Array<MercuryoTxEntity>,
+    transactions: Array<MoonpayTxEntity>,
   ) {
   
     this.walletAddress = walletAddress
-    this.moonpayTransactions = moonpayTransactions
-    this.mercuryoTransactions = mercuryoTransactions
+    this.transactions = transactions
   }
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column({ name: 'wallet_address',})
+  @Column({ name: 'wallet_address', unique: true})
   walletAddress: string
 
   @OneToMany(() => MoonpayTxEntity, (tx: MoonpayTxEntity) => tx.user, {
     onUpdate: 'CASCADE',
     onDelete: 'CASCADE',
   })
-  moonpayTransactions: Array<MoonpayTxEntity>
+  transactions: Array<MoonpayTxEntity>
 
-  @OneToMany(() => MercuryoTxEntity, (tx: MercuryoTxEntity) => tx.user, {
-    onUpdate: 'CASCADE',
-    onDelete: 'CASCADE',
-  })
-  mercuryoTransactions: Array<MercuryoTxEntity>
 }

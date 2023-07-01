@@ -4,8 +4,8 @@ import { fetchBscAvailability, fetchBscQuote, generateBinanceConnectSig, generat
 import { fetchBinanceConnectIpAvailability, fetchMercuryoIpAvailability, fetchMoonPayIpAvailability, fetchProviderQuotes } from "./proxy/proxyHandlers";
 import { fetchBinanceConnectQuote } from "./proxy/fetchers/ProviderQuoteFetchers";
 import { fetchIpDetails, fetchMercuryoAvailability } from "./proxy/fetchers/ipAvailabilityFetchers";
-import { createUser } from "./user/createUserHandler";
-import { getUserTransactions, getUserTransactionss } from "./user/getTransactions";
+import { TransactionUpdaterWebHook } from "./webhookCallbacks/types";
+import { getMessages, getUserMessages } from "../database/queries";
 
 
 const router: Router = express.Router()
@@ -23,9 +23,9 @@ router.route("/fetch-moonpay-availability").get(fetchMoonPayIpAvailability)
 router.route("/fetch-mercuryo-availability").get(fetchMercuryoIpAvailability)
 router.route('/user-ip').get(fetchIpDetails)
 
-//user routes
-router.route("/create-user").post(createUser)
-router.route("/get-user-transactions").get(getUserTransactionss)
-
+//webhooks
+router.route('/webhook').post(TransactionUpdaterWebHook)
+router.route('/messages').post(getMessages)
+router.route('/get-messages').get(getUserMessages)
 
 export default router

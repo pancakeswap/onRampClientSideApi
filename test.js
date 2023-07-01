@@ -1,5 +1,4 @@
 const axios = require("axios");
-const PG = require("pg");
 const { getRepository } = require("typeorm");
 const MOONPAY_EBDPOINT = `https://api.moonpay.com/v3/currencies/`;
 const MERCURYO_ENDPOINT = `https://api.mercuryo.io/v1.6/widget/buy/rate`;
@@ -142,24 +141,6 @@ const fetchBSCQuote = async () => {
 	}
 };
 
-const pool = new PG.Pool({
-	user: "pcs",
-	host: "localhost",
-	database: "api",
-	password: "password",
-	port: 5432,
-});
-
-const getSocketMessages1 = () => {
-	return new Promise((resolve) => {
-		pool.query("SELECT * FROM users ORDER BY id DESC LIMIT 10", (error, results) => {
-			if (error) {
-				throw error;
-			}
-			resolve(results.rows);
-		});
-	});
-};
 
 const getSocketMessages = () => {
 	return new Promise((resolve, reject) => {

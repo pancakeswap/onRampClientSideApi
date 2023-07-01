@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConnectionOptions";
-import { MercuryoTxEntity, MoonpayTxEntity, UserEntity } from "./entities";
+import {  MoonpayTxEntity, UserEntity } from "./entities";
 
 export const typeOrmConfig: PostgresConnectionOptions = {
   type: "postgres",
@@ -10,9 +10,9 @@ export const typeOrmConfig: PostgresConnectionOptions = {
   name: 'text',
   password: "Emcg45245!",
   database: "api",
-  synchronize: true,
+  // synchronize: true,
   // logging: true,
-  entities: [UserEntity, MoonpayTxEntity, MercuryoTxEntity],
+  entities: [UserEntity, MoonpayTxEntity],
   subscribers: [],
   migrations: [],
 }

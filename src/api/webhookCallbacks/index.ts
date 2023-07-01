@@ -1,23 +1,20 @@
-import { assert } from "console";
 import { MoonpayTxEntity, UserEntity } from "../../database/entities";
-import { Request, Response } from "express";
 import qs from "qs";
-import { getRepository } from "typeorm";
 import { z } from "zod";
-import { TransactionStatus } from "./moonpayTxHandler";
 import { connectDatabase } from "../../database/database";
 import { emitMostRecentMessges } from "../../server";
+import { TX_STATUS } from "database/entities/Transactions.entity";
 
 const MoonpaySchema = z
 	.object({
-		id: z.number(),
+		id: z.string(),
 		walletAddress: z.string(),
 		status: z.string(),
 		updatedAt: z.string(),
 		baseCurrency: z.string(),
 		quoteCurrency: z.string(),
-		baseCurrencyAmount: z.string(),
-		quoteCurrencyAmount: z.string(),
+		baseCurrencyAmount: z.number(),
+		quoteCurrencyAmount: z.number(),
 	})
 	.nonstrict();
 
@@ -51,74 +48,110 @@ export interface TransactionData {
 	quoteCurrencyAmount: number;
 }
 
-const processTransactionData = (transactionData: TransactionData) => {
-	// Process the transaction data here...
+export const createTransactionHandler = async (transactionData) => {
+	try {
+		const queryParsed = qs.parse(transactionData);
+		const parsed = MoonpaySchema.safeParse(queryParsed);
+
+		if (parsed.success === false) {
+			console.log("Invalid payload");
+			throw new Error("Invalid request body");
+			//handleErrorBroadCast
+			//
+		}
+
+		const { walletAddress, status } = parsed.data;
+		const connection = await connectDatabase(false);
+		const userRepository = connection.getRepository(UserEntity);
+		const transactionRepository = connection.getRepository(MoonpayTxEntity);
+
+		let user: UserEntity | undefined = undefined;
+		const existingUser = await userRepository.findOneBy({ walletAddress });
+		console.log(existingUser);
+		if (!existingUser) {
+			console.log("No account found with this wallet. Creating new account now");
+			user = new UserEntity(walletAddress, []) as UserEntity;
+			await userRepository.save(user);
+			console.log(user);
+			console.log("User successfully created");
+		}
+
+		console.log("User exists, now adding transaction to DB");
+		const { id, baseCurrencyAmount, quoteCurrency, baseCurrency } = parsed.data;
+		const st = status as keyof typeof TX_STATUS;
+		const transaction = new MoonpayTxEntity(
+			id,
+			"MoonPay",
+			st,
+			Number(baseCurrencyAmount),
+			quoteCurrency,
+			baseCurrency,
+			user ? user : existingUser,
+		);
+		await transactionRepository.save(transaction);
+		//   await userRepository.update()
+		console.log("Transaction successfully created");
+
+		console.log("Now fetching user transaction list");
+		const userTransactionsEntity = await userRepository
+			.createQueryBuilder("user")
+			.leftJoinAndSelect("user.transactions", "transactions")
+			.where("user.walletAddress = :walletAddress", { walletAddress })
+			.getOne();
+		console.log(userTransactionsEntity);
+		// //   // Emit most recent messages
+		// //   // emitMostRecentMessages(transactions);
+
+		console.log("Handler executed successfully");
+		return userTransactionsEntity
+	} catch (error) {
+		console.log("Handler execution failed:", error);
+		throw error;
+	}
 };
 
-const data3 = {
-	id: 123,
-	walletAddress: '0xc6eD2D6c295579718dbd4a797845CdA70B3C3',
-	status: 'completed',
-	updatedAt: '2022-08-31T10:00:31.251Z',
-	baseCurrency: 'Euro',
-	quoteCurrency: 'Ethereum',
-	baseCurrencyAmount: '295.45',
-	quoteCurrencyAmount: '0.1819',
-      };
 
-
-export const pendingTransactionHandler = async (transactionData): Promise<void> => {
+export const updateTransactionHandler = async (transactionData) => {
 	try {
-	  const queryParsed = qs.parse(transactionData);
-	  const parsed = MoonpaySchema.safeParse(queryParsed);
-      
-	  if (parsed.success === false) {
-	    console.log("Invalid payload");
-	    throw new Error("Invalid request body");
-	  }
-      
-	  const { walletAddress, status } = parsed.data;
-	  const connection = await connectDatabase(false);
-	  const userRepository = connection.getRepository(UserEntity);
-	  const transactionRepository = connection.getRepository(MoonpayTxEntity);
-      
-	  let user: UserEntity
-	  const existingUser = await userRepository.findOneBy({ walletAddress });
-	  console.log(existingUser)
-	  if (!existingUser) {
-	    console.log("No account found with this wallet. Creating new account now");
-	    user = new UserEntity(walletAddress, [], [])
-	    await userRepository.save(user);
-	    console.log(user)
-	    console.log("User successfully created");
-	  }
-      
-	  console.log("User exists, now adding transaction to DB");
-	  const { transactionId, amount, fiatCurrency, cryptoCurrency } = parsed.data;
-	  const transaction = new MoonpayTxEntity(transactionId, status, amount, fiatCurrency, cryptoCurrency, user);
-	  await transactionRepository.save(transaction);
-	//   await userRepository.update()
-	  console.log("Transaction successfully created");
-      
-	  console.log("Now fetching user transaction list");
-	  const userTransactionsEntity = await userRepository
-	    .createQueryBuilder("user")
-	    .leftJoinAndSelect("user.moonpayTransactions", "moonpayTransactions")
-	    .getMany();
-      
-	//     userTransactionsEntity.forEach((tx) => console.log(tx))
-	//   const transactions = userTransactionsEntity.flatMap((user) => user.walletAddress);
-	//   console.log("Transactions received", transactions);
+		const queryParsed = qs.parse(transactionData);
+		const parsed = MoonpaySchema.safeParse(queryParsed);
 
-	//   console.log(transactions[2], 'hhh')
-      
-	// //   // Emit most recent messages
-	// //   // emitMostRecentMessages(transactions);
-      
-	//   console.log("Handler executed successfully");
+		if (parsed.success === false) {
+			console.log("Invalid payload");
+			throw new Error("Invalid request body");
+			//handleErrorBroadCast
+			//
+		}
+
+		const { walletAddress, status, id } = parsed.data;
+		const st = status as keyof typeof TX_STATUS;
+
+		const connection = await connectDatabase(false);
+		const userRepository = connection.getRepository(UserEntity);
+		const transactionRepository = connection.getRepository(MoonpayTxEntity);
+		const existingTransaction = await transactionRepository.findOneBy({
+			transactionId: id,
+		});
+	
+		existingTransaction.status = st
+		await transactionRepository.save(existingTransaction)
+		console.log("Transaction successfully updated");
+
+		console.log("Now fetching updated user transaction list");
+		const userTransactionsEntity = await userRepository
+			.createQueryBuilder("user")
+			.leftJoinAndSelect("user.transactions", "transactions")
+			.where("user.walletAddress = :walletAddress", { walletAddress })
+			.getOne();
+			
+		console.log(userTransactionsEntity);
+		// Emit most recent messages
+		// emitMostRecentMessages(transactions);
+
+		console.log("Handler executed successfully");
+		return userTransactionsEntity
 	} catch (error) {
-	  console.log("Handler execution failed:", error);
-	  throw error;
+		console.log("Handler execution failed:", error);
+		throw error;
 	}
-      };
-      
+};
