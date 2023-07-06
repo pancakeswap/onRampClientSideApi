@@ -2,7 +2,13 @@ import { Request, Response } from "express";
 import { websocketserver } from "../../server";
 import { Cache } from "../../cache";
 import { checkCacheForDuplicateRequests } from "../../utils/checkCache";
-import { baseCurrencySchema, currencySchema, dataSchema, getValidQuoteSchema, myDataSchema } from "../../typeValidation/webhookValidation";
+import {
+	baseCurrencySchema,
+	currencySchema,
+	dataSchema,
+	getValidQuoteSchema,
+	myDataSchema,
+} from "../../typeValidation/webhookValidation";
 import { generateHMAC } from "../../utils/rsa_sig";
 import config from "../../config/config";
 
@@ -31,7 +37,11 @@ export const MoonPayTestWebhook = async (req: Request, res: Response): Promise<v
 	const quote = getValidQuoteSchema.parse(MoonPayEvent.getValidQuote);
 	const data = dataSchema.parse(MoonPayEvent);
 
-	const isDuplicateRequest = checkCacheForDuplicateRequests(data.status, quote.transactionId, MoonPayCache);
+	const isDuplicateRequest = checkCacheForDuplicateRequests(
+		data.status,
+		quote.transactionId,
+		MoonPayCache,
+	);
 	if (isDuplicateRequest) {
 		res.status(200).send({ message: "Duplicate event. Already processed." });
 		return;
@@ -91,7 +101,11 @@ export const MercuryoTestWebhook = async (req: Request, res: Response): Promise<
 	const mercuryoEvent = myDataSchema.parse(req.body).data;
 	const { status, merchant_transaction_id } = mercuryoEvent;
 
-	const isDuplicateRequest = checkCacheForDuplicateRequests(status, merchant_transaction_id, MercuryoCache);
+	const isDuplicateRequest = checkCacheForDuplicateRequests(
+		status,
+		merchant_transaction_id,
+		MercuryoCache,
+	);
 	if (isDuplicateRequest) {
 		res.status(200).send({ message: "Duplicate event. Already processed." });
 		return;

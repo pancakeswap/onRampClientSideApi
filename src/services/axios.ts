@@ -14,8 +14,7 @@ export const get = async <Res = unknown>(
     return data as Res;
   } catch (error) {
     console.error(`GET ${path}`);
-    console.error(error);
-    return null;
+    return error.response.data;
   }
 };
 
@@ -29,8 +28,7 @@ export const post = async <Res = unknown, Req = any>(
     return received as Res;
   } catch (error) {
     console.error(`POST ${path}`);
-    console.error(error);
-    return null;
+    return error.response.data;
   }
 };
 

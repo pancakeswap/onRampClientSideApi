@@ -5,13 +5,12 @@ import { Server as SocketIOServer, Socket } from "socket.io";
 import { connectDatabase } from "./database/database";
 import { Connection } from "typeorm";
 import router from "./api/router";
-import errorHandler from "./middleware/errorHandlingMiddleware";
+import ExceptionHandler from "./middleware/errorHandler";
 import cors from "cors";
 import { WebhookResponse } from "./api/webhookCallbacks/webhookHandlers";
 import { MoonpayTxEntity, UserEntity } from "./database/entities";
 import { TX_STATUS } from "./database/entities/Transactions.entity";
-import { Logger, createLogger } from "winston";
-import MiddleWares from "./middleware/Kernel";
+import Log from "./middleware/Log";
 
 const socketPort = 8000;
 
@@ -20,7 +19,7 @@ class Server {
 	private server: http.Server;
 	private io: SocketIOServer;
 	public connection: Connection;
-	public logger: Logger
+	public logger: typeof Log
 
 	constructor(router: express.Router) {
 		this.app = express();
@@ -32,10 +31,12 @@ class Server {
 			},
 		});
 
-		this.configureMiddlewares();
+		this.app.use(express.json());
+
 		this.configureRoutes(router);
 		this.configureWebSocket();
-		this.logger = createLogger()
+		this.configureMiddlewares();
+		this.logger = Log
 
 	}
 
@@ -43,8 +44,12 @@ class Server {
 		this.app.use(express.json());
 		this.app.set("trust proxy", true);
 		this.app.use(cors({ origin: "*" }));
-                this.app.use(errorHandler);
-		// MiddleWares.init(this.app)
+		
+		this.app.use(ExceptionHandler.logErrors);
+		this.app.use(ExceptionHandler.errorHandler);
+		this.app.use(ExceptionHandler.errorResponder)
+		this.app.use(ExceptionHandler.invalidPathHandler)
+           
 	}
 
 	private configureRoutes(router: express.Router): void {

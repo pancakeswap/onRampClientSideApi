@@ -1,28 +1,34 @@
 import axios from 'axios';
-import { post } from '../../../services/axios';
+import { get, post } from '../../../services/axios';
 import { sign } from '../../../utils/rsa_sig';
 import { checkIpPayloadSchema } from '../../../typeValidation/validation';
 import config from '../../../config/config';
 const geoip = require('geoip-lite');
 
-export async function fetchMoonpayAvailability(userIp: string) {
-    // Fetch data from endpoint 2
-    try {
-        const response = await axios.get(
-            `https://api.moonpay.com/v4/ip_address?apiKey=${config.moonpayLiveKey}&ipAddress=${userIp}`,
-            {
-              headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-              },
-            },
-          );
-      const result = response.data;
-      return { code: 'MOONPAY', result: result, error: false };
-    } catch (error) {
-      return { code: 'MOONPAY', result: error, error: true };
-    }
+type FetchMoonpayAvailabilityResponse<T, E extends boolean = boolean> = E extends true
+  ? { code: 'MOONPAY'; result: unknown; error: true }
+  : { code: 'MOONPAY'; result: T; error: false };
+
+  // type MoonpayAvailabilityResponse = FetchMoonpayAvailabilityResponse<MoonpayData>;
+export async function fetchMoonpayAvailability<T, E extends boolean = boolean>(
+  userIp: string
+): Promise<FetchMoonpayAvailabilityResponse<T, E>> {
+  try {
+    const response = await get(
+      `https://api.moonpay.com/v4/ip_address?apiKey=${config.moonpayLiveKey}&ipAddress=${userIp}`,
+      {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    const result = response as T;
+    return { code: 'MOONPAY', result, error: false } as FetchMoonpayAvailabilityResponse<T, E>;
+  } catch (error) {
+    return { code: 'MOONPAY', result: error, error: true } as FetchMoonpayAvailabilityResponse<T, E>;
   }
+}
 
 export async function fetchMercuryoAvailability(userIp: string) {
   // Fetch data from endpoint 2
@@ -37,7 +43,7 @@ export async function fetchMercuryoAvailability(userIp: string) {
       },
     );
     const result = response.data;
-    return { status: 'MERCURYO', result: result, error: false };
+    return { code: 'MERCURYO', result: result, error: false };
   } catch (error) {
     return { code: 'MERCURYO', result: error, error: true };
   }

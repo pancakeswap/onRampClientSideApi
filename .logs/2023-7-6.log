@@ -1,0 +1,1440 @@
+[2023-7-6 0:57:24] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 0:57:24] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 0:57:24] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 0:57:24] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:7:19] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 1:7:19] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 1:7:19] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 1:7:19] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:8:0] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 1:8:0] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 1:8:0] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 1:8:0] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:9:9] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 1:9:9] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 1:9:9] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 1:9:9] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:10:35] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 1:10:35] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 1:10:35] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:10:35] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 1:10:35] [INFO] Server :: Booting @ Master...
+[2023-7-6 1:15:4] [INFO] Booting the 'HTTP' middleware...
+[2023-7-6 1:15:4] [INFO] Routes :: Mounting API Routes...
+[2023-7-6 1:15:4] [INFO] Server :: Booting @ Master...
+[2023-7-6 1:15:4] [INFO] Booting the 'StatusMonitor' middleware...
+[2023-7-6 1:15:4] [INFO] Routes :: Mounting Web Routes...
+[2023-7-6 13:40:47] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:43:52] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:49:48] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:50:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:50:13] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:50:44] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:51:1] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:54:14] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:55:11] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:58:3] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 13:58:3] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 13:59:40] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:0:47] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:1:0] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:1:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:1:2] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:5:22] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:5:35] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:5:35] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:5:35] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:6:32] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:6:32] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:7:18] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:7:18] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:8:26] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:8:26] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:8:54] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:8:54] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:8:54] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:10:55] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:10:55] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:11:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:11:15] [ERROR] Error: payload has the incorrect shape. please check you types
+    at fetchBscQuote (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:168:10)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:13:3] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:13:43] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:15:14] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:16:5] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:16:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:16:23] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:16:23] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:18:6] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:18:6] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:18:6] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:18:6] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:18:6] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:19:8] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:19:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:19:38] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:25:39)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 14:21:29] [ERROR] Error: Validation Error {}
+    at validateMercuryoSchema (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/validation.ts:131:9)
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:39:41)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 14:21:29] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:23:1] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:42:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:50:23] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 14:52:52] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:5:17] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:5:17] [ERROR] Error: "Validation Error {\"success\":false,\"error\":{\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddress\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:6:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:6:15] [ERROR] Error: "Validation Error {}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:6:43] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:6:43] [ERROR] Error: "Validation Error [object Object]"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:6:50] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:6:50] [ERROR] Error: "Validation Error {\"success\":false,\"error\":{\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddress\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:8:5] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:8:5] [ERROR] Error: "Validation Error {\"success\":false,\"error\":{\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddress\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:8:5] [ERROR] Error: "Validation Error {\"success\":false,\"error\":{\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddress\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:9:6] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:9:6] [ERROR] Error: "Validation Error {\"success\":false,\"error\":{\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddress\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:9:44] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:9:44] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:9:44] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:9:44] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:29:8)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 15:20:39] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:28:17] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:54:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 15:55:10] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:14:54] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:15:9] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:18:18] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:19:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:19:35] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:22:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:25:30] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:26:59] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:27:42] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:28:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:28:43] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:29:23] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:30:53] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:30:53] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:87:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:30:53] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:87:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:30:53] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:87:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:30:53] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:87:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:34:4] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:34:4] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:88:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:34:4] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:88:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 16:35:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:36:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:39:23] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:39:45] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:39:57] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:40:23] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:41:31] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:41:52] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:41:52] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at generateMoonPaySignature (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:114:23)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 16:42:26] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:42:26] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at generateMoonPaySignature (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:114:23)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 16:42:26] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at generateMoonPaySignature (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:114:23)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 16:42:26] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:45:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 16:42:26] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at generateMoonPaySignature (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:114:23)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 16:42:26] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:45:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 16:42:26] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at toPto (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MercuryoSigRequest.ts:33:23)
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:55:49)
+[2023-7-6 16:50:36] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:51:17] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:51:25] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:53:29] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:53:41] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:54:6] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:54:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:54:51] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:55:44] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:55:56] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:57:34] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:58:11] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:58:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:58:28] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 16:59:7] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:0:31] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:0:54] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:2:8] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:2:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:2:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:3:35] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:4:19] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:4:19] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddress"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:45:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 17:4:19] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at toPto (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MercuryoSigRequest.ts:33:23)
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:55:49)
+[2023-7-6 17:5:13] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:5:13] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["message"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:59:11)
+[2023-7-6 17:5:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:5:21] [ERROR] TypeError: Cannot read properties of undefined (reading 'message')
+    at toPto (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MercuryoSigRequest.ts:33:23)
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:55:49)
+[2023-7-6 17:5:27] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:5:27] [ERROR] Error: "Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["message"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMercuryoSig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:59:11)
+[2023-7-6 17:5:27] [ERROR] TypeError: Cannot read properties of undefined (reading 'walletAddress')
+    at toDtoMp (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/typeValidation/model/MoonPaySigRequest.ts:50:9)
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:88:44)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+[2023-7-6 17:7:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:7:2] [ERROR] Error: "MoonPay Url signature schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["defaultCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["theme"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddresses"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["showOnlyCurrencies"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyAmount"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:12:1] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:12:1] [ERROR] Error: "MoonPay Url signature schema Validation Error {"success":false
+"error":{"issues":[{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["defaultCurrencyCode"]
+"message":"Required"}
+{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["theme"]
+"message":"Required"}
+{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["walletAddresses"]
+"message":"Required"}
+{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["showOnlyCurrencies"]
+"message":"Required"}
+{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["baseCurrencyCode"]
+"message":"Required"}
+{"code":"invalid_type"
+"expected":"string"
+"received":"undefined"
+"path":["baseCurrencyAmount"]
+"message":"Required"}]
+"name":"ZodError"}}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:13:57] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:13:57] [ERROR] Error: "MoonPay Url signature schema Validation Error {\n  \"success\": false,\n  \"error\": {\n    \"issues\": [\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"defaultCurrencyCode\"\n        ],\n        \"message\": \"Required\"\n      },\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"theme\"\n        ],\n        \"message\": \"Required\"\n      },\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"walletAddresses\"\n        ],\n        \"message\": \"Required\"\n      },\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"showOnlyCurrencies\"\n        ],\n        \"message\": \"Required\"\n      },\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"baseCurrencyCode\"\n        ],\n        \"message\": \"Required\"\n      },\n      {\n        \"code\": \"invalid_type\",\n        \"expected\": \"string\",\n        \"received\": \"undefined\",\n        \"path\": [\n          \"baseCurrencyAmount\"\n        ],\n        \"message\": \"Required\"\n      }\n    ],\n    \"name\": \"ZodError\"\n  }\n}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:15:18] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:15:18] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:15:50] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:15:50] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:15:50] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:15:50] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:17:17] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:17:17] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:17:55] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:17:55] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:18:14] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:18:14] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:18:54] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:18:54] [ERROR] Error: "MoonPay Url signature schema Validation Error [object Object]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:19:7] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:19:41] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:19:41] [ERROR] Error: "MoonPay Url signature schema Validation Error [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"defaultCurrencyCode\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"theme\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"walletAddresses\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"showOnlyCurrencies\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"baseCurrencyCode\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"baseCurrencyAmount\"\n    ],\n    \"message\": \"Required\"\n  }\n]"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:20:14] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:20:14] [ERROR] Error: "MoonPay Url signature schema Validation Error {\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"defaultCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"theme\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddresses\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"showOnlyCurrencies\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyAmount\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:21:47] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:21:47] [ERROR] Error: "MoonPay Url signature schema Validation Error {\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"defaultCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"theme\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddresses\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"showOnlyCurrencies\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyAmount\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:22:12] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:22:12] [ERROR] Error: "MoonPay Url signature schema Validation Error {\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"defaultCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"theme\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddresses\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"showOnlyCurrencies\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyAmount\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:22:26] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:22:26] [ERROR] Error: "MoonPay Url signature schema Validation Error {\"issues\":[{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"defaultCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"theme\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"walletAddresses\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"showOnlyCurrencies\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyCode\"],\"message\":\"Required\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"baseCurrencyAmount\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:23:16] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:24:39] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:25:20] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:25:20] [ERROR] Error: "MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:26:20] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:26:20] [ERROR] Error: "MoonPay Url signature schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["defaultCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["theme"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddresses"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["showOnlyCurrencies"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyAmount"],"message":"Required"}],"name":"ZodError"}}"
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:26:46] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:27:29] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:27:29] [ERROR] Error: MoonPay Url signature schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["defaultCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["theme"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["walletAddresses"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["showOnlyCurrencies"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyCode"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["baseCurrencyAmount"],"message":"Required"}],"name":"ZodError"}}
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:27:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:27:38] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:29:9] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:29:9] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:29:9] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:29:9] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:32:4] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:32:4] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddresses"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"array",
+"path":["showOnlyCurrencies"],
+"message":"Expected string,
+ received array"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:94:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:33:44] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:35:18] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:35:57] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:35:57] [ERROR] Error: MoonPay Url signature schema Validation Error {
+"success":false,
+"error":{
+"issues":[{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["defaultCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["theme"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["walletAddress"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"array",
+"received":"undefined",
+"path":["showOnlyCurrencies"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyCode"],
+"message":"Required"}
+,
+{
+"code":"invalid_type",
+"expected":"string",
+"received":"undefined",
+"path":["baseCurrencyAmount"],
+"message":"Required"}
+],
+"name":"ZodError"}
+}
+
+    at generateMoonPaySig (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/verification/signatureHandlers.ts:93:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:35:57] [ERROR] TypeError: Cannot read properties of undefined (reading 'toString')
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:26:35)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 17:42:10] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:42:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 17:45:45] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:6:19] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:7:14] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:9:0] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:10:37] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:13:30] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:16:3] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:16:49] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:19:44] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:23:1] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:25:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:26:48] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:26:48] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMercuryoIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:50:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 18:28:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:29:35] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:33:31] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:35:54] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:36:19] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:36:59] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:37:48] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:40:58] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:41:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:41:15] [ERROR] Error: "Provider Quote schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["fiatCurrency"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["cryptoCurrency"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["amount"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["network"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:20:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 18:45:11] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 18:46:6] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:4:19] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:5:28] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:6:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:6:49] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:6:49] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:66:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:47:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:6:49] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:66:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:47:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:9:19] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:9:27] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:9:27] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:67:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:48:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:9:27] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:67:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:48:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:10:34] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:10:57] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:13:34] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:13:34] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:67:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:48:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:14:2] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:14:12] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:14:12] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:67:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:48:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:17:27] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:17:27] [ERROR] TypeError: Cannot read properties of undefined (reading 'USD')
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:67:42
+    at Array.map (<anonymous>)
+    at fetchProviderQuotes (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:48:38)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-7-6 19:17:34] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:17:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:18:27] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 19:18:53] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:7:50] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:10:31] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:11:32] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:11:32] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:13:57] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:13:57] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:16:47] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:18:24] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:20:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:21:25] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:21:41] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:22:8] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:22:8] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:22:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:22:21] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:22:37] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:22:37] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:23:38] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:23:38] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:24:25] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:24:33] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:24:33] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:26:0] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:26:0] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:26:12] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:26:12] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:26:31] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:26:31] [ERROR] Error: "Provider IP schema Validation Error {"success":false,"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["userIp"],"message":"Required"}],"name":"ZodError"}}"
+    at fetchMoonPayIpAvailability (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/src/api/proxy/proxyHandlers.ts:171:9)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:142:13)
+    at Route.dispatch (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/route.js:107:3)
+    at handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:421:11)
+    at Layer.handleRequest (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/lib/layer.js:101:15)
+    at /Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:288:22
+    at processParams (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:568:12)
+    at next (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:282:5)
+    at Function.handle (/Users/evan/Documents/onRampAPIWebSocket/on-ramp-client-side-api/node_modules/router/index.js:181:3)
+[2023-7-6 20:35:21] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:42:11] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)
+[2023-7-6 20:42:15] [INFO] [32mDatabase connected[39m. (database: [33mapi[39m)

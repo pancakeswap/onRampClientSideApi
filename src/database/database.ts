@@ -1,10 +1,10 @@
 import chalk from "chalk";
 import { Connection, createConnection, getConnectionManager } from "typeorm";
-import { Logger } from "winston";
+import Log from "../middleware/Log";
 import { typeOrmConfig } from "./orm-config";
 
 export const connectDatabase = async (
-    logger: Logger,
+    logger: typeof Log,
     RESET_DB: boolean
 ): Promise<Connection> => {
     let connection: Connection;
@@ -17,7 +17,7 @@ export const connectDatabase = async (
             )})`,
         );
     } catch (err: any) {
-        logger.error("err!", err);
+        logger.error(`err!", ${err}`);
         if (err.name === "AlreadyHasActiveConnectionError") {
             connection = getConnectionManager().get(typeOrmConfig.name);
         } else {

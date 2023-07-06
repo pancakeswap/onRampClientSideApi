@@ -1,6 +1,6 @@
 {
 	"trailingComma": "all",
-	"tabWidth": 8,
+	"tabWidth": 6,
 	"semi": true,
 	"arrowParens": "always",
 	"bracketSameLine": false,
@@ -8,5 +8,5 @@
 	"quoteProps": "as-needed",
 	"useTabs": true,
 	"singleQuote": false,
-	"printWidth": 135
+	"printWidth": 110
 }
